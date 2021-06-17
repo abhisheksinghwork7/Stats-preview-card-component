@@ -1,0 +1,126 @@
+
+    $main-background: hsl(233, 47%, 7%);
+    $card-background: hsl(244, 38%, 16%);
+    $image-blend:#a557d6d7;
+    $accent-color: hsl(277, 64%, 61%);
+    $main-text-white: hsl(0, 0%, 100%);
+    $main-para: hsla(0, 0%, 100%, 0.75);
+    $main-stats-header: hsla(0, 0%, 100%, 0.6);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-size: 15px;
+    background-color: $main-background;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.container{
+    max-width: 350px;
+    margin: 10vh auto;
+    background-color: $card-background;
+    text-align: center;
+    overflow: hidden;
+    border-radius: .5rem;
+    text-align: center;
+    
+    
+}
+
+.img-holder {
+    background: url(../images/image-header-mobile.jpg) no-repeat 0,0 $image-blend ;
+    background-blend-mode: multiply;
+    float: left;
+    width: 100%;
+    height: 240px;
+    background-size: cover;    
+    margin-bottom: 12%;
+}
+
+.main{
+    .main-header{
+        padding: 0 2rem;
+        color: $main-text-white;
+        margin-top: 10%;
+        .insight{
+            color: $accent-color;
+        }
+    }
+    p{
+        color: $main-para;
+        padding: 1.5rem 1.4rem;
+    }
+    
+}
+
+.main-stats{
+    .stats{
+       margin-bottom: 2rem;
+       h2{
+        color: $main-stats-header;
+       }
+       p{
+        color: $main-para;
+       }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        display: grid;
+        max-width: 60rem;
+        max-height: 24rem;
+        grid-template-columns: 25% 25% 25% ;
+        grid-template-rows: 25% 25% 25% 25%;
+        margin: 20vh auto 10vh auto;
+        .image{
+            grid-area: 1/3/3/5;
+        }
+        .img-holder{
+            background: url(../images/image-header-desktop.jpg) no-repeat 0,0 #a557d6d7 ;
+            background-blend-mode: multiply; 
+            width: 540px;
+            height: 440px; 
+            margin-bottom: 0;  
+                     
+        }
+        .main{
+            grid-area: 1/1/2/3;
+            
+            .main-content{
+                padding:0 2rem 0 0;
+                .main-header{
+                    margin:13% 13% 6%;
+                    text-align: left;
+                    padding: inherit;    
+                    
+                }
+                p{
+                   margin: 7% 10%;         
+                    text-align: left;
+                   padding: inherit;
+                }
+            }
+            
+        }
+        .main-stats{
+            grid-area: 3/1/5/3;
+            display: flex;
+            justify-content: space-around;
+            padding: 3rem 2rem;
+            align-self: center;             
+        }
+    }
+}
+
+.attribution{
+    margin-bottom: 30px;
+    color: white;
+}
+
