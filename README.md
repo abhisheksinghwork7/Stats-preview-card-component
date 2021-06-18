@@ -19,6 +19,7 @@ View the optimal layout depending on their device's screen size
 
 ## Links
 Solution URL: https://github.com/abhisheksinghwork7/Stats-preview-card-component
+
 Live Site URL: https://stats-preview-card-component-3hsi2lud1-abhisheksinghwork7.vercel.app/
 
 # My process
