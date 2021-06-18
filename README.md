@@ -1,7 +1,7 @@
 # Frontend Mentor - Stats preview card component
 Screenshot
 
-![screenshot of project](images\Screenshot.png)
+![screenshot of project](images/Screenshot.png)
 
 
 This is a solution to the [Stats preview card component challenge](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
